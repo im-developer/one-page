@@ -1,0 +1,32 @@
+.navbar-default {
+  border-radius: 0;
+  background-color: white;
+  border-bottom: 0;
+}
+
+.navbar {
+  margin: 0;
+}
+
+.navbar-brand {
+  height: 62px;
+  padding: 25px;
+  padding-bottom: 5px;
+}
+.navbar-nav {
+  > li {
+    > a {
+      text-transform: uppercase;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .navbar-nav {
+    > li {
+      > a {
+        padding-top: 35px;
+        padding-bottom: 5px;
+      }
+    }
+  }
+}

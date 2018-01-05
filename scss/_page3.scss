@@ -1,0 +1,73 @@
+.section-3 {
+  height: 100vh;
+
+  .section-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 43px;
+    padding-top: 120px;
+    span.bold {
+      font-size: 45px;
+      font-weight: bold;
+    }
+    span.separate {
+      color: #EE4036;
+      margin: 5px;
+    }
+  }
+
+  .section-description {
+    color: #939598;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+
+  .cards {
+    margin-top: 20px;
+
+    text-align: center;
+    .card {
+      margin-left: 25px;
+      &:first-of-type {
+        margin-left: 0;
+      }
+      float: left;
+      width: calc(20% - 25px);
+      height: 240px;
+      min-height: 230px;
+      padding: 5px;
+
+      .card-title {
+        font-size: 26px;
+        font-weight: normal;
+        text-transform: uppercase;
+        span {
+          font-weight: bold;
+          display: block;
+        }
+      }
+
+      p {
+        padding: 0 10px;
+        font-size: 11px;
+        text-align: justify;
+      }
+
+      .read-more {
+        border-radius: 20px;
+        border: 1px solid #000;
+        color: #000;
+        text-decoration: none;
+        padding: 5px 10px;
+      }
+    }
+  }
+
+  .sub-description {
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+  }
+
+}

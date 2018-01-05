@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Ingeredients</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div data-include="header.html"></div>
+    <!--<div data-include="page1.html"></div>-->
+    <div class="main">
+        <div data-include="page1.html"></div>
+        <div data-include="page2.html"></div>
+        <div data-include="page3.html"></div>
+        <div data-include="page4.html"></div>
+        <div data-include="page5.html"></div>
+        <div data-include="page6.html"></div>
+        <div data-include="page7.html"></div>
+    </div>
+    <div data-include="footer.html"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://getbootstrap.com/docs/3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://ihatetomatoes.net/demos/one-page-scroll-animations/js/onepagescroll/jquery.onepage-scroll.js"></script>
+    <link href='https://ihatetomatoes.net/demos/one-page-scroll-animations/js/onepagescroll/onepage-scroll.css' rel='stylesheet' type='text/css'>
+    <script>
+        $('[data-include]').each(function () {
+            var t = this;
+            $(this).load("components/" + $(this).data('include'), function (r) {
+                $(t).replaceWith(r);
+            })
+//            $(this).load("components/" + $(this).data('include'));
+        });
+
+        $(document).ready(function(){
+
+            setTimeout(function () {
+                $(".main").onepage_scroll({
+                    sectionContainer: "section", // sectionContainer accepts any kind of selector in case you don't want to use section
+                    easing: "ease", // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+                    animationTime: 900, // AnimationTime let you define how long each section takes to animate
+                    pagination: true, // You can either show or hide the pagination. Toggle true for show, false for hide.
+                    updateURL: false // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+                });
+
+            }, 2000)
+        });
+    </script>
+
+    <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://192.168.0.104:3000/browser-sync/browser-sync-client.js?v=2.23.2'><\/script>".replace("HOST", location.hostname));
+    //]]></script>
+
+</body>
+</html>

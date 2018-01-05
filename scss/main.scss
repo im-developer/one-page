@@ -1,0 +1,18 @@
+span.bold {
+  font-weight: bold;
+}
+span.separate {
+  color: #EE4036;
+  margin: 5px;
+}
+
+@import "mixin";
+@import "header";
+@import "page1";
+@import "page2";
+@import "page3";
+@import "page4";
+@import "page5";
+@import "page6";
+@import "page7";
+@import 'footer';
