@@ -6,6 +6,7 @@
     text-align: center;
     font-size: 43px;
     padding-top: 100px;
+    font-family: "Verlag Light", Arial, sans-serif;
   }
 
   .section-description {
@@ -13,6 +14,7 @@
     text-transform: uppercase;
     font-size: 12px;
     line-height: 1px;
+    font-family: "Verlag Light", Arial, sans-serif;
   }
 
   .clients-container {
@@ -28,6 +30,11 @@
     li {
       display: inline-block;
       margin: 0 30px;
+      opacity: 0;
+
+      &.animate {
+        animation: opacity 3s normal forwards ease;
+      }
     }
   }
 
@@ -37,15 +44,28 @@
     font-size: 25px;
     padding-top: 30px;
     font-weight: bold;
+    font-family: "Verlag Bold", Arial, sans-serif;
     &.section-subtitle {
       font-weight: normal;
       padding-top: 0;
+      font-family: "Verlag Book", Arial, sans-serif;
+    }
+    opacity: 0;
+
+    &.animate {
+      animation: toTop 1s normal forwards ease-in-out, opacity 3s normal forwards ease;
     }
   }
 
   .section-content {
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
+    opacity: 0;
+    font-family: "Verlag Light", Arial, sans-serif;
+
+    &.animate {
+      animation: toTop 1s normal forwards ease-in-out, opacity 3s normal forwards ease;
+    }
 
     .ceo {
       margin-top: 10px;

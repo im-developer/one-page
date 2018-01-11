@@ -1,5 +1,6 @@
 span.bold {
   font-weight: bold;
+  font-family: "Verlag Bold", Arial, sans-serif;
 }
 span.separate {
   color: #EE4036;
@@ -7,6 +8,8 @@ span.separate {
 }
 
 @import "mixin";
+@import "effects";
+@import "fonts";
 @import "header";
 @import "page1";
 @import "page2";

@@ -17,6 +17,7 @@
   > li {
     > a {
       text-transform: uppercase;
+      font-family: "Verlag Light", Arial, sans-serif;
     }
   }
 }
@@ -28,5 +29,104 @@
         padding-bottom: 5px;
       }
     }
+  }
+}
+
+
+.scroll-btn {
+  position: fixed;
+  bottom: 0;
+  left: 49.5%;
+
+  .mouse {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 45px;
+    margin: 0 auto 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid #FFF;
+    &.gray {
+      border: 2px solid #d7d7d7;
+    }
+    border-radius: 23px;
+
+    > * {
+      position: absolute;
+      display: block;
+      top: 29%;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      margin: -4px 0 0 -4px;
+      background: #FFF;
+      border-radius: 50%;
+      -webkit-animation: ani-mouse 2.5s linear infinite;
+      -moz-animation: ani-mouse 2.5s linear infinite;
+      animation: ani-mouse 2.5s linear infinite;
+    }
+    &.gray {
+      > * {
+        background: #d7d7d7;
+      }
+    }
+  }
+
+}
+
+@-webkit-keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+@-moz-keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+@keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
   }
 }

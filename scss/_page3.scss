@@ -6,9 +6,17 @@
     text-align: center;
     font-size: 43px;
     padding-top: 120px;
+    font-family: "Verlag Light", Arial, sans-serif;
+
+
+    &.animate {
+      animation: toRight 1s normal forwards ease-in-out, opacity 3s normal forwards ease;
+    }
+
     span.bold {
       font-size: 45px;
       font-weight: bold;
+      font-family: "Verlag Black", Arial, sans-serif;
     }
     span.separate {
       color: #EE4036;
@@ -20,7 +28,14 @@
     color: #939598;
     text-align: center;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 12px;
+    font-family: "Verlag Light", Arial, sans-serif;
+
+
+    &.animate {
+      animation: toRight 1s normal forwards ease-in-out, opacity 3s normal forwards ease;
+    }
+
   }
 
   .cards {
@@ -42,16 +57,19 @@
         font-size: 26px;
         font-weight: normal;
         text-transform: uppercase;
+        font-family: "Verlag Light", Arial, sans-serif;
         span {
           font-weight: bold;
           display: block;
+          font-family: "Verlag Bold", Arial, sans-serif;
         }
       }
 
       p {
         padding: 0 10px;
-        font-size: 11px;
+        font-size: 12px;
         text-align: justify;
+        font-family: "Verlag XLight", Arial, sans-serif;
       }
 
       .read-more {
@@ -60,7 +78,15 @@
         color: #000;
         text-decoration: none;
         padding: 5px 10px;
+        font-family: "Verlag Light", Arial, sans-serif;
       }
+
+      transform: scale(0);
+
+      &.animate {
+        animation: scale 1s normal forwards ease-in-out;
+      }
+
     }
   }
 

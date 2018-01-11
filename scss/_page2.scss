@@ -8,9 +8,16 @@
     font-size: 43px;
     color: white;
     padding-top: 120px;
+
+    font-family: "Verlag Book", Arial, sans-serif;
+    opacity: 0;
     span {
       font-size: 45px;
       font-weight: bold;
+      font-family: "Verlag Bold", Arial, sans-serif;
+    }
+    &.animate {
+      animation: toRight 1s normal forwards ease-in-out, opacity 3s normal forwards ease;
     }
   }
 
@@ -18,7 +25,11 @@
     color: #EE4036;
     text-align: center;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 15px;
+    font-family: "Verlag XLight", Arial, sans-serif;
+    &.animate {
+      animation: toRight 1s normal forwards ease-in-out, opacity 3s normal forwards ease;
+    }
   }
 
   .cards {
@@ -26,6 +37,7 @@
 
     text-align: center;
     .card {
+
       margin-left: 25px;
       &:first-of-type {
         margin-left: 0;
@@ -36,26 +48,40 @@
       min-height: 230px;
       padding: 5px;
       color: white;
-      border: 3px solid #FFF;
+
+      // Using inset box-shadow instead of border for sizing simplicity
 
       .card-title {
         font-size: 26px;
         font-weight: normal;
         text-transform: uppercase;
+        font-family: "Verlag Book", Arial, sans-serif;
         span {
           font-weight: bold;
           display: block;
+          font-family: "Verlag Bold", Arial, sans-serif;
         }
+        opacity: 0;
+        transition: opacity 1s;
       }
 
       p {
         padding: 0 10px;
         font-size: 11px;
         text-align: justify;
+        opacity: 0;
+        transition: opacity 1s;
+        font-family: "Verlag Light", Arial, sans-serif;
       }
 
       &.active {
-        border-color: #EE4036;
+        transform: scale(1.1);
+      }
+
+      &.animate, &.animated {
+        .card-title, p {
+          opacity: 1;
+        }
       }
     }
   }
@@ -64,6 +90,7 @@
     text-align: center;
     color: white;
     margin-top: 15px;
+    font-family: "Verlag Light", Arial, sans-serif;
   }
 
 }

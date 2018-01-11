@@ -1,5 +1,6 @@
 span.bold {
-  font-weight: bold; }
+  font-weight: bold;
+  font-family: "Verlag Bold", Arial, sans-serif; }
 
 span.separate {
   color: #EE4036;
@@ -9,6 +10,177 @@ span.separate {
     Example usage:
     @include animation(10s, 5s, changecolour)
  */
+.section-2 .card {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  position: relative;
+  vertical-align: middle; }
+  .section-2 .card::before, .section-2 .card::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+.section-2 .card {
+  transition: 1s all; }
+  .section-2 .card::before, .section-2 .card::after {
+    border: 3px solid transparent;
+    width: 0;
+    height: 0; }
+  .section-2 .card::before {
+    top: 0;
+    left: 0; }
+  .section-2 .card::after {
+    bottom: 0;
+    right: 0; }
+  .section-2 .card.animate::before, .section-2 .card.animate::after {
+    width: 100%;
+    height: 100%; }
+  .section-2 .card.animate::before {
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
+  .section-2 .card.animate::after {
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
+.section-2 .card::after {
+  top: 0;
+  left: 0; }
+.section-2 .card.animate::before {
+  border-top-color: #FFF;
+  border-right-color: #FFF; }
+.section-2 .card.animate::after {
+  border-bottom-color: #FFF;
+  border-left-color: #FFF;
+  transition: height 0.25s ease-out, width 0.25s ease-out 0.25s; }
+.section-2 .active.animate::before {
+  border-top-color: #EE4036;
+  border-right-color: #EE4036; }
+.section-2 .active.animate::after {
+  border-bottom-color: #EE4036;
+  border-left-color: #EE4036; }
+
+@keyframes toTop {
+  from {
+    margin-top: 50px; }
+  to {
+    margin-top: 0; } }
+@keyframes widthLine {
+  from {
+    width: 0px; }
+  to {
+    width: 150px; } }
+@keyframes toRight {
+  from {
+    margin-left: -50px; }
+  to {
+    margin-left: 0; } }
+@keyframes fromTop {
+  from {
+    top: -10px; }
+  to {
+    top: 0; } }
+@keyframes opacity {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes scale {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+@font-face {
+  font-family: "Verlag Black";
+  src: url("./fonts/Verlag Black.otf?") format("opentype"); }
+@font-face {
+  font-family: "Verlag Black";
+  src: url("./fonts/Verlag Black Italic.otf?") format("opentype");
+  font-style: italic; }
+@font-face {
+  font-family: "Verlag Bold";
+  src: url("./fonts/Verlag Bold.otf?") format("opentype");
+  font-weight: bold; }
+@font-face {
+  font-family: "Verlag Bold";
+  src: url("./fonts/Verlag Bold Italic.otf?") format("opentype");
+  font-weight: bold;
+  font-style: italic; }
+@font-face {
+  font-family: "Verlag Book";
+  src: url("./fonts/Verlag Book.otf?") format("opentype"); }
+@font-face {
+  font-family: "Verlag Book";
+  src: url("./fonts/Verlag Book Italic.otf?") format("opentype");
+  font-style: italic; }
+@font-face {
+  font-family: "Verlag Compressed Black";
+  src: url("./fonts/Verlag Compressed Black.otf?") format("opentype"); }
+@font-face {
+  font-family: "Verlag Compressed Black";
+  src: url("./fonts/Verlag Compressed Black Italic.otf?") format("opentype");
+  font-style: italic; }
+@font-face {
+  font-family: "Verlag Compressed Bold";
+  src: url("./fonts/Verlag Compressed Bold.otf?") format("opentype"); }
+@font-face {
+  font-family: "Verlag Compressed Bold";
+  src: url("./fonts/Verlag Compressed Bold Italic.otf?") format("opentype");
+  font-style: italic; }
+@font-face {
+  font-family: "Verlag Compressed Light";
+  src: url("./fonts/Verlag Compressed Light.otf?") format("opentype"); }
+@font-face {
+  font-family: "Verlag Compressed Light";
+  src: url("./fonts/Verlag Compressed Light Italic.otf?") format("opentype");
+  font-style: italic; }
+@font-face {
+  font-family: "Verlag Compressed XLight";
+  src: url("./fonts/Verlag Compressed XLight.otf?") format("opentype"); }
+@font-face {
+  font-family: "Verlag Compressed XLight";
+  src: url("./fonts/Verlag Compressed XLight Italic.otf?") format("opentype");
+  font-style: italic; }
+@font-face {
+  font-family: "Verlag Condensed Black";
+  src: url("./fonts/Verlag Condensed Black.otf?") format("opentype"); }
+@font-face {
+  font-family: "Verlag Condensed Black";
+  src: url("./fonts/Verlag Condensed Black Italic.otf?") format("opentype");
+  font-style: italic; }
+@font-face {
+  font-family: "Verlag Condensed Bold";
+  src: url("./fonts/Verlag Condensed Bold.otf?") format("opentype"); }
+@font-face {
+  font-family: "Verlag Condensed Bold";
+  src: url("./fonts/Verlag Condensed Bold Italic.otf?") format("opentype");
+  font-style: italic; }
+@font-face {
+  font-family: "Verlag Condensed Light";
+  src: url("./fonts/Verlag Condensed Light.otf?") format("opentype"); }
+@font-face {
+  font-family: "Verlag Condensed Light";
+  src: url("./fonts/Verlag Condensed Light Italic.otf?") format("opentype");
+  font-style: italic; }
+@font-face {
+  font-family: "Verlag Condensed XLight";
+  src: url("./fonts/Verlag Condensed XLight.otf?") format("opentype"); }
+@font-face {
+  font-family: "Verlag Condensed XLight";
+  src: url("./fonts/Verlag Condensed XLight Italic.otf?") format("opentype");
+  font-style: italic; }
+@font-face {
+  font-family: "Verlag Light";
+  src: url("./fonts/Verlag Light.otf?") format("opentype"); }
+@font-face {
+  font-family: "Verlag Light";
+  src: url("./fonts/Verlag Light Italic.otf?") format("opentype");
+  font-style: italic; }
+@font-face {
+  font-family: "Verlag XLight";
+  src: url("./fonts/Verlag XLight.otf?") format("opentype"); }
+@font-face {
+  font-family: "Verlag XLight";
+  src: url("./fonts/Verlag XLight Italic.otf?") format("opentype");
+  font-style: italic; }
 .navbar-default {
   border-radius: 0;
   background-color: white;
@@ -23,20 +195,90 @@ span.separate {
   padding-bottom: 5px; }
 
 .navbar-nav > li > a {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "Verlag Light", Arial, sans-serif; }
 
 @media (min-width: 768px) {
   .navbar-nav > li > a {
     padding-top: 35px;
     padding-bottom: 5px; } }
+.scroll-btn {
+  position: fixed;
+  bottom: 0;
+  left: 49.5%; }
+  .scroll-btn .mouse {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 45px;
+    margin: 0 auto 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid #FFF;
+    border-radius: 23px; }
+    .scroll-btn .mouse.gray {
+      border: 2px solid #d7d7d7; }
+    .scroll-btn .mouse > * {
+      position: absolute;
+      display: block;
+      top: 29%;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      margin: -4px 0 0 -4px;
+      background: #FFF;
+      border-radius: 50%;
+      -webkit-animation: ani-mouse 2.5s linear infinite;
+      -moz-animation: ani-mouse 2.5s linear infinite;
+      animation: ani-mouse 2.5s linear infinite; }
+    .scroll-btn .mouse.gray > * {
+      background: #d7d7d7; }
+
+@-webkit-keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%; }
+  15% {
+    opacity: 1;
+    top: 50%; }
+  50% {
+    opacity: 0;
+    top: 50%; }
+  100% {
+    opacity: 0;
+    top: 29%; } }
+@-moz-keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%; }
+  15% {
+    opacity: 1;
+    top: 50%; }
+  50% {
+    opacity: 0;
+    top: 50%; }
+  100% {
+    opacity: 0;
+    top: 29%; } }
+@keyframes ani-mouse {
+  0% {
+    opacity: 1;
+    top: 29%; }
+  15% {
+    opacity: 1;
+    top: 50%; }
+  50% {
+    opacity: 0;
+    top: 50%; }
+  100% {
+    opacity: 0;
+    top: 29%; } }
 .section-1 {
   position: relative;
   height: 100vh;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; }
+  text-align: center; }
 
 .sun, .cloud-1, .cloud-2, .cloud-3, .cloud-4, .cloud-5 {
   position: absolute;
@@ -97,15 +339,42 @@ span.separate {
   text-transform: uppercase;
   font-size: 80px;
   text-align: center;
-  margin-top: -80px;
-  max-width: 70%;
-  z-index: 2; }
+  margin-top: 20%;
+  z-index: 2;
+  font-family: "Verlag Bold", Arial, sans-serif; }
+  .main-title.animate {
+    animation: example 1s normal forwards ease-in-out, opacity 3s normal forwards ease; }
 
+@keyframes example {
+  from {
+    margin-top: 25%; }
+  to {
+    margin-top: 20%; } }
+@keyframes opacity {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 .main-description {
   text-align: center;
   line-height: 1;
-  z-index: 2; }
+  z-index: 2;
+  opacity: 0;
+  font-family: "Verlag Light", Arial, sans-serif; }
+  .main-description.animate {
+    animation: example2 1s normal forwards ease-in-out, opacity2 3s normal forwards ease;
+    animation-delay: 1s; }
 
+@keyframes example2 {
+  from {
+    margin-right: 50px; }
+  to {
+    margin-right: 0; } }
+@keyframes opacity2 {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 .section-2 {
   background-color: #231F20;
   height: 100vh; }
@@ -114,15 +383,23 @@ span.separate {
     text-align: center;
     font-size: 43px;
     color: white;
-    padding-top: 120px; }
+    padding-top: 120px;
+    font-family: "Verlag Book", Arial, sans-serif;
+    opacity: 0; }
     .section-2 .section-title span {
       font-size: 45px;
-      font-weight: bold; }
+      font-weight: bold;
+      font-family: "Verlag Bold", Arial, sans-serif; }
+    .section-2 .section-title.animate {
+      animation: toRight 1s normal forwards ease-in-out, opacity 3s normal forwards ease; }
   .section-2 .section-description {
     color: #EE4036;
     text-align: center;
     text-transform: uppercase;
-    font-size: 11px; }
+    font-size: 15px;
+    font-family: "Verlag XLight", Arial, sans-serif; }
+    .section-2 .section-description.animate {
+      animation: toRight 1s normal forwards ease-in-out, opacity 3s normal forwards ease; }
   .section-2 .cards {
     margin-top: 20px;
     text-align: center; }
@@ -133,27 +410,36 @@ span.separate {
       height: 240px;
       min-height: 230px;
       padding: 5px;
-      color: white;
-      border: 3px solid #FFF; }
+      color: white; }
       .section-2 .cards .card:first-of-type {
         margin-left: 0; }
       .section-2 .cards .card .card-title {
         font-size: 26px;
         font-weight: normal;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        font-family: "Verlag Book", Arial, sans-serif;
+        opacity: 0;
+        transition: opacity 1s; }
         .section-2 .cards .card .card-title span {
           font-weight: bold;
-          display: block; }
+          display: block;
+          font-family: "Verlag Bold", Arial, sans-serif; }
       .section-2 .cards .card p {
         padding: 0 10px;
         font-size: 11px;
-        text-align: justify; }
+        text-align: justify;
+        opacity: 0;
+        transition: opacity 1s;
+        font-family: "Verlag Light", Arial, sans-serif; }
       .section-2 .cards .card.active {
-        border-color: #EE4036; }
+        transform: scale(1.1); }
+      .section-2 .cards .card.animate .card-title, .section-2 .cards .card.animate p, .section-2 .cards .card.animated .card-title, .section-2 .cards .card.animated p {
+        opacity: 1; }
   .section-2 .sub-description {
     text-align: center;
     color: white;
-    margin-top: 15px; }
+    margin-top: 15px;
+    font-family: "Verlag Light", Arial, sans-serif; }
 
 .section-3 {
   height: 100vh; }
@@ -161,10 +447,14 @@ span.separate {
     text-transform: uppercase;
     text-align: center;
     font-size: 43px;
-    padding-top: 120px; }
+    padding-top: 120px;
+    font-family: "Verlag Light", Arial, sans-serif; }
+    .section-3 .section-title.animate {
+      animation: toRight 1s normal forwards ease-in-out, opacity 3s normal forwards ease; }
     .section-3 .section-title span.bold {
       font-size: 45px;
-      font-weight: bold; }
+      font-weight: bold;
+      font-family: "Verlag Black", Arial, sans-serif; }
     .section-3 .section-title span.separate {
       color: #EE4036;
       margin: 5px; }
@@ -172,7 +462,10 @@ span.separate {
     color: #939598;
     text-align: center;
     text-transform: uppercase;
-    font-size: 11px; }
+    font-size: 12px;
+    font-family: "Verlag Light", Arial, sans-serif; }
+    .section-3 .section-description.animate {
+      animation: toRight 1s normal forwards ease-in-out, opacity 3s normal forwards ease; }
   .section-3 .cards {
     margin-top: 20px;
     text-align: center; }
@@ -182,26 +475,33 @@ span.separate {
       width: calc(20% - 25px);
       height: 240px;
       min-height: 230px;
-      padding: 5px; }
+      padding: 5px;
+      transform: scale(0); }
       .section-3 .cards .card:first-of-type {
         margin-left: 0; }
       .section-3 .cards .card .card-title {
         font-size: 26px;
         font-weight: normal;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        font-family: "Verlag Light", Arial, sans-serif; }
         .section-3 .cards .card .card-title span {
           font-weight: bold;
-          display: block; }
+          display: block;
+          font-family: "Verlag Bold", Arial, sans-serif; }
       .section-3 .cards .card p {
         padding: 0 10px;
-        font-size: 11px;
-        text-align: justify; }
+        font-size: 12px;
+        text-align: justify;
+        font-family: "Verlag XLight", Arial, sans-serif; }
       .section-3 .cards .card .read-more {
         border-radius: 20px;
         border: 1px solid #000;
         color: #000;
         text-decoration: none;
-        padding: 5px 10px; }
+        padding: 5px 10px;
+        font-family: "Verlag Light", Arial, sans-serif; }
+      .section-3 .cards .card.animate {
+        animation: scale 1s normal forwards ease-in-out; }
   .section-3 .sub-description {
     text-align: center;
     color: white;
@@ -275,12 +575,14 @@ span.separate {
     text-transform: uppercase;
     text-align: center;
     font-size: 43px;
-    padding-top: 100px; }
+    padding-top: 100px;
+    font-family: "Verlag Light", Arial, sans-serif; }
   .section-5 .section-description {
     text-align: center;
     text-transform: uppercase;
     font-size: 12px;
-    line-height: 1px; }
+    line-height: 1px;
+    font-family: "Verlag Light", Arial, sans-serif; }
   .section-5 .clients-container {
     background-color: #F8F8F9;
     margin-top: 30px;
@@ -290,19 +592,31 @@ span.separate {
     list-style: none; }
     .section-5 .clients-list li {
       display: inline-block;
-      margin: 0 30px; }
+      margin: 0 30px;
+      opacity: 0; }
+      .section-5 .clients-list li.animate {
+        animation: opacity 3s normal forwards ease; }
   .section-5 .section-title2, .section-5 .section-subtitle {
     text-transform: uppercase;
     text-align: center;
     font-size: 25px;
     padding-top: 30px;
-    font-weight: bold; }
+    font-weight: bold;
+    font-family: "Verlag Bold", Arial, sans-serif;
+    opacity: 0; }
     .section-5 .section-title2.section-subtitle, .section-5 .section-subtitle.section-subtitle {
       font-weight: normal;
-      padding-top: 0; }
+      padding-top: 0;
+      font-family: "Verlag Book", Arial, sans-serif; }
+    .section-5 .section-title2.animate, .section-5 .section-subtitle.animate {
+      animation: toTop 1s normal forwards ease-in-out, opacity 3s normal forwards ease; }
   .section-5 .section-content {
     text-align: center;
-    font-size: 12px; }
+    font-size: 14px;
+    opacity: 0;
+    font-family: "Verlag Light", Arial, sans-serif; }
+    .section-5 .section-content.animate {
+      animation: toTop 1s normal forwards ease-in-out, opacity 3s normal forwards ease; }
     .section-5 .section-content .ceo {
       margin-top: 10px;
       font-size: 14px; }
@@ -313,28 +627,53 @@ span.separate {
     text-transform: uppercase;
     text-align: center;
     font-size: 43px;
-    padding-top: 100px; }
+    padding-top: 100px;
+    opacity: 0;
+    font-family: "Verlag Light", Arial, sans-serif; }
+    .section-6 .section-title.animate {
+      animation: toRight 1s normal forwards ease-in-out, opacity 3s normal forwards ease; }
   .section-6 .section-description {
     text-align: center;
-    font-size: 12px;
-    color: #EE4036; }
+    font-size: 15px;
+    color: #EE4036;
+    opacity: 0;
+    font-family: "Verlag Light", Arial, sans-serif; }
+    .section-6 .section-description.animate {
+      animation: toRight 1s normal forwards ease-in-out, opacity 3s normal forwards ease; }
+  .section-6 .address {
+    opacity: 0;
+    font-family: "Verlag Light", Arial, sans-serif; }
+    .section-6 .address.animate {
+      animation: toRight 1s normal forwards ease-in-out, opacity 3s normal forwards ease; }
   .section-6 .part-title {
     text-transform: uppercase;
     font-size: 25px;
-    padding-top: 50px; }
+    padding-top: 50px;
+    opacity: 0;
+    font-family: "Verlag Light", Arial, sans-serif; }
+    .section-6 .part-title.animate {
+      animation: toRight 1s normal forwards ease-in-out, opacity 3s normal forwards ease; }
+  .section-6 .contact-form .form-group {
+    opacity: 0; }
+    .section-6 .contact-form .form-group.animate {
+      animation: toRight 1s normal forwards ease-in-out, opacity 3s normal forwards ease; }
   .section-6 .contact-form .form-control {
     border-radius: 20px; }
   .section-6 .contact-form .form-control::-moz-placeholder {
     color: #D1D3D4;
-    opacity: 1; }
+    opacity: 1;
+    font-family: "Verlag Light", Arial, sans-serif; }
   .section-6 .contact-form .form-control:-ms-input-placeholder {
-    color: #D1D3D4; }
+    color: #D1D3D4;
+    font-family: "Verlag Light", Arial, sans-serif; }
   .section-6 .contact-form .form-control::-webkit-input-placeholder {
-    color: #D1D3D4; }
+    color: #D1D3D4;
+    font-family: "Verlag Light", Arial, sans-serif; }
   .section-6 .contact-form .btn {
     border: 1px solid #D1D3D4;
     color: #D1D3D4;
-    border-radius: 20px; }
+    border-radius: 20px;
+    font-family: "Verlag Light", Arial, sans-serif; }
 
 .section-7 {
   height: 100vh;
@@ -347,35 +686,48 @@ span.separate {
     text-align: center;
     font-size: 30px;
     line-height: 30px;
-    margin-top: -100px; }
+    margin-top: -100px;
+    opacity: 0;
+    font-family: "Verlag Light", Arial, sans-serif; }
+    .section-7 .section-title.animate, .section-7 .section-subtitle.animate {
+      animation: toRight 1.5s normal forwards ease-in-out, opacity 4s normal forwards ease; }
     .section-7 .section-title.section-subtitle, .section-7 .section-subtitle.section-subtitle {
       padding-top: 0;
       margin-top: 0; }
   .section-7 .line {
-    width: 150px;
+    width: 0px;
     margin-top: 5px;
     border-bottom: 5px solid #EE4036; }
-  .section-7 .section-description {
-    text-align: center;
-    font-size: 12px;
-    color: #EE4036; }
-  .section-7 .part-title {
-    text-transform: uppercase;
-    font-size: 25px;
-    padding-top: 50px; }
-  .section-7 .contact-form .form-control {
-    border-radius: 20px; }
-  .section-7 .contact-form .form-control::-moz-placeholder {
-    color: #D1D3D4;
-    opacity: 1; }
-  .section-7 .contact-form .form-control:-ms-input-placeholder {
-    color: #D1D3D4; }
-  .section-7 .contact-form .form-control::-webkit-input-placeholder {
-    color: #D1D3D4; }
-  .section-7 .contact-form .btn {
-    border: 1px solid #D1D3D4;
-    color: #D1D3D4;
-    border-radius: 20px; }
+    .section-7 .line.animate {
+      animation: widthLine 1s normal forwards ease-in-out; }
+  .section-7 .contact-social {
+    opacity: 0;
+    position: relative;
+    font-family: "Verlag Light", Arial, sans-serif; }
+    .section-7 .contact-social.animate {
+      animation: fromTop 1s normal forwards ease-in-out, opacity 3s normal forwards ease; }
+  .section-7 .social-media {
+    margin-top: 20px; }
+    .section-7 .social-media li {
+      list-style: none;
+      justify-content: center;
+      align-items: center;
+      display: inline-flex;
+      transform: scale(0); }
+      .section-7 .social-media li.animate {
+        animation: scale 1s normal forwards ease-in-out, opacity 2s normal forwards ease; }
+      .section-7 .social-media li a {
+        justify-content: center;
+        align-items: center;
+        display: inline-flex;
+        width: 50px;
+        height: 50px;
+        background-color: #413F42;
+        border-radius: 50%;
+        text-decoration: none; }
+        .section-7 .social-media li a .fa {
+          color: white;
+          font-size: 2em; }
 
 .footer {
   height: 100px;

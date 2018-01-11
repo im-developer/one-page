@@ -3,10 +3,7 @@
   height: 100vh;
   overflow: hidden;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  text-align: center;
 }
 
 $animateTime: 60s;
@@ -75,13 +72,43 @@ $animateTime: 60s;
   text-transform: uppercase;
   font-size: 80px;
   text-align: center;
-  margin-top: -80px;
-  max-width: 70%;
+  margin-top: 20%;
   z-index: 2;
+  font-family: "Verlag Bold", Arial, sans-serif;
+
+  &.animate {
+    animation: example 1s normal forwards ease-in-out, opacity 3s normal forwards ease;
+  }
+}
+
+@keyframes example {
+  from {margin-top: 25%;}
+  to {margin-top: 20%;}
+}
+
+@keyframes opacity {
+  from {opacity: 0}
+  to {opacity: 1}
 }
 
 .main-description {
   text-align: center;
   line-height: 1;
   z-index: 2;
+  opacity: 0;
+  font-family: "Verlag Light", Arial, sans-serif;
+  &.animate {
+    animation: example2 1s normal forwards ease-in-out, opacity2 3s normal forwards ease;
+    animation-delay: 1s;
+  }
+}
+
+@keyframes example2 {
+  from {margin-right: 50px;}
+  to {margin-right: 0;}
+}
+
+@keyframes opacity2 {
+  from {opacity: 0}
+  to {opacity: 1}
 }
