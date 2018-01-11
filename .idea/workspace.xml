@@ -2,91 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="766c65a5-e76a-4dd6-a395-d1d4ce094dda" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Black Italic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Black.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Bold Italic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Bold.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Book Italic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Book.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Compressed Black Italic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Compressed Black.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Compressed Bold Italic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Compressed Bold.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Compressed Book Italic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Compressed Book.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Compressed Light Italic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Compressed Light.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Compressed XLight Italic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Compressed XLight.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Condensed Black Italic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Condensed Black.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Condensed Bold Italic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Condensed Bold.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Condensed Book Italic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Condensed Book.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Condensed Light Italic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Condensed Light.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Condensed XLight Italic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Condensed XLight.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Light Italic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag Light.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag XLight Italic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag XLight.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag-Black.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag-BlackItalic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag-Bold.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag-BoldItalic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag-Book (1).otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag-BookItalic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag-Light.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag-LightItalic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag-XLight.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/Verlag-XLightItalic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/VerlagComp-Black.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/VerlagComp-BlackItalic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/VerlagComp-Bold.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/VerlagComp-BoldItalic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/VerlagComp-Book.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/VerlagComp-BookItalic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/VerlagComp-Light.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/VerlagComp-LightItalic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/VerlagComp-XLight.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/VerlagComp-XLightItalic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/VerlagCond-Black.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/VerlagCond-BlackItalic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/VerlagCond-Bold.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/VerlagCond-BoldItalic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/VerlagCond-Book.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/VerlagCond-BookItalic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/VerlagCond-Light.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/VerlagCond-LightItalic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/VerlagCond-XLight.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/VerlagCond-XLightItalic.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/www.Brushez.com-Ebhaar.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/onepage-scroll.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.onepage-scroll.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/_effects.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/_fonts.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xindex.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/header.html" afterPath="$PROJECT_DIR$/components/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/page1.html" afterPath="$PROJECT_DIR$/components/page1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/page2.html" afterPath="$PROJECT_DIR$/components/page2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/page3.html" afterPath="$PROJECT_DIR$/components/page3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/page5.html" afterPath="$PROJECT_DIR$/components/page5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/page6.html" afterPath="$PROJECT_DIR$/components/page6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/components/page7.html" afterPath="$PROJECT_DIR$/components/page7.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css.map" afterPath="$PROJECT_DIR$/css/main.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_header.scss" afterPath="$PROJECT_DIR$/scss/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_page1.scss" afterPath="$PROJECT_DIR$/scss/_page1.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_page2.scss" afterPath="$PROJECT_DIR$/scss/_page2.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_page3.scss" afterPath="$PROJECT_DIR$/scss/_page3.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_page5.scss" afterPath="$PROJECT_DIR$/scss/_page5.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_page6.scss" afterPath="$PROJECT_DIR$/scss/_page6.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_page7.scss" afterPath="$PROJECT_DIR$/scss/_page7.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/main.scss" afterPath="$PROJECT_DIR$/scss/main.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -99,12 +17,24 @@
     <splitter split-orientation="horizontal" split-proportion="0.68447">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="380">
                   <caret line="31" column="42" lean-forward="false" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="824">
+                  <caret line="379" column="7" lean-forward="false" selection-start-line="379" selection-start-column="7" selection-end-line="379" selection-end-column="7" />
+                  <folding>
+                    <element signature="e#14049#14055#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -332,8 +262,8 @@
         <option value="$PROJECT_DIR$/scss/_page5.scss" />
         <option value="$PROJECT_DIR$/scss/_page6.scss" />
         <option value="$PROJECT_DIR$/scss/_page7.scss" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -389,6 +319,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/scss" />
       <recent name="$PROJECT_DIR$/scss/fonts" />
       <recent name="$PROJECT_DIR$/components" />
@@ -423,12 +354,12 @@
       <updated>1515143836833</updated>
       <workItem from="1515143842332" duration="23784000" />
       <workItem from="1515413379425" duration="25000" />
-      <workItem from="1515666666832" duration="17023000" />
+      <workItem from="1515666666832" duration="17169000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40832000" />
+    <option name="totallyTimeSpent" value="40978000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1676" y="23" width="1680" height="1013" extended-state="0" />
@@ -465,15 +396,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scss/_page2.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/xindex.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -800,7 +723,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/xindex.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="56" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="110" selection-end-column="7" />
@@ -813,6 +736,16 @@
         <state relative-caret-position="380">
           <caret line="31" column="42" lean-forward="false" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="824">
+          <caret line="379" column="7" lean-forward="false" selection-start-line="379" selection-start-column="7" selection-end-line="379" selection-end-column="7" />
+          <folding>
+            <element signature="e#14049#14055#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
