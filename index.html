@@ -64,7 +64,7 @@
         To be more than a brand you have to leave your seat and be part of the show
     </p>
     <div class="container">
-        <div class="cards">
+        <div class="cards owl-carousel">
             <div class="card" data-animate="active" data-delay="0.5" data-active-delay="2">
                 <h2 class="card-title">Success <span>Stories</span></h2>
                 <p>All work is a project work, but not - all projects are a wow project.
@@ -105,36 +105,50 @@
     </p>
 
     <div class="container">
-        <div class="cards">
+        <div class="cards owl-carousel">
             <div class="card" data-animate data-delay="0.2">
-                <img src="../img/media-planning.png" alt="">
+                <div class="image-container">
+                    <img src="../img/media-planning.png" alt="">
+                </div>
                 <h2 class="card-title">Success <span>Stories</span></h2>
                 <p>All work is a project work, but not - all projects are a wow project.
                     If we shock you.All work is a project work, but not - all projects are a wow project. If we shock you.</p>
                 <a href="#" class="read-more">Read More</a>
             </div>
             <div class="card" data-animate data-delay="0.3">
-                <img src="../img/creative.png" alt="">
+                <div class="image-container">
+                    <img src="../img/creative.png" alt="">
+                </div>
                 <h2 class="card-title">The <span>Team</span></h2>
-                <p>All work is a project work, but not - all projects are a wow project. If we shock you.</p>
+                <p>All work is a project work, but not - all projects are a wow project.
+                    If we shock you.All work is a project work, but not - all projects are a wow project. If we shock you.</p>
                 <a href="#" class="read-more">Read More</a>
             </div>
             <div class="card" data-animate data-delay="0.4">
-                <img src="../img/digital.png" alt="">
+                <div class="image-container">
+                    <img src="../img/digital.png" alt="">
+                </div>
                 <h2 class="card-title">Our <span>Way</span></h2>
-                <p>All work is a project work, but not - all projects are a wow project. If we shock you.</p>
+                <p>All work is a project work, but not - all projects are a wow project.
+                    If we shock you.All work is a project work, but not - all projects are a wow project. If we shock you.</p>
                 <a href="#" class="read-more">Read More</a>
             </div>
             <div class="card" data-animate data-delay="0.5">
-                <img src="../img/training.png" alt="">
+                <div class="image-container">
+                    <img src="../img/training.png" alt="">
+                </div>
                 <h2 class="card-title"><span>Mission</span></h2>
-                <p>All work is a project work, but not - all projects are a wow project. If we shock you.</p>
+                <p>All work is a project work, but not - all projects are a wow project.
+                    If we shock you.All work is a project work, but not - all projects are a wow project. If we shock you.</p>
                 <a href="#" class="read-more">Read More</a>
             </div>
             <div class="card" data-animate data-delay="0.6">
-                <img src="../img/media.png" alt="">
+                <div class="image-container">
+                    <img src="../img/media.png" alt="">
+                </div>
                 <h2 class="card-title"><span>Vision</span></h2>
-                <p>All work is a project work, but not - all projects are a wow project. If we shock you.</p>
+                <p>All work is a project work, but not - all projects are a wow project.
+                    If we shock you.All work is a project work, but not - all projects are a wow project. If we shock you.</p>
                 <a href="#" class="read-more">Read More</a>
             </div>
         </div>
@@ -164,28 +178,28 @@
     </ul>
 
     <ul class="portfolio-list">
-        <li>
+        <li data-animate>
             <a href="#"><img src="https://i1.sndcdn.com/artworks-000201384997-wfyabd-t200x200.jpg" alt=""></a>
         </li>
-        <li>
+        <li data-animate>
             <a href="#"><img src="https://i1.sndcdn.com/artworks-000047965743-619tgf-t200x200.jpg" alt=""></a>
         </li>
-        <li>
+        <li data-animate>
             <a href="#"><img src="https://i1.sndcdn.com/artworks-000053603743-62kxc2-t200x200.jpg" alt=""></a>
         </li>
-        <li>
+        <li data-animate>
             <a href="#"><img src="https://i1.sndcdn.com/artworks-000248548943-815iut-t200x200.jpg" alt=""></a>
         </li>
-        <li>
+        <li data-animate>
             <a href="#"><img src="https://i1.sndcdn.com/artworks-000157471093-20luv8-t200x200.jpg" alt=""></a>
         </li>
-        <li>
+        <li data-animate>
             <a href="#"><img src="https://i1.sndcdn.com/artworks-000248548943-815iut-t200x200.jpg" alt=""></a>
         </li>
-        <li>
+        <li data-animate>
             <a href="#"><img src="https://i1.sndcdn.com/artworks-000201384997-wfyabd-t200x200.jpg" alt=""></a>
         </li>
-        <li>
+        <li data-animate>
             <a href="#"><img src="https://i1.sndcdn.com/artworks-000248548943-815iut-t200x200.jpg" alt=""></a>
         </li>
     </ul>
@@ -204,7 +218,7 @@
     </p>
 
     <div class="clients-container">
-        <ul class="clients-list">
+        <ul class="clients-list owl-carousel">
             <li data-animate data-delay="0.3">
                 <a href="">
                     <img src="../img/client1.png" alt="">
@@ -371,6 +385,28 @@
             $('.main').moveTo($(this).data('section'));
             return false;
         })
+
+        $('.portfolio-categories li a').click(function () {
+            $('.portfolio-categories li').removeClass('active');
+            $(this).parent().addClass('active');
+            return false;
+        })
+
+        $(".owl-carousel").owlCarousel({
+            responsive : {
+                0:{
+                    items:2,
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    loop:false
+                }
+            }
+        });
 
     });
 

@@ -31,10 +31,15 @@
 
     <div data-include="footer.html"></div>
 
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://getbootstrap.com/docs/3.3/dist/js/bootstrap.min.js"></script>
     <script src="./js/jquery.onepage-scroll.min.js"></script>
     <link href='./css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
 
     <script>
         $('[data-include]').each(function () {
@@ -98,13 +103,35 @@
                     return false;
                 })
 
+                $('.portfolio-categories li a').click(function () {
+                    $('.portfolio-categories li').removeClass('active');
+                    $(this).parent().addClass('active');
+                    return false;
+                })
+
+                $(".owl-carousel").owlCarousel({
+                    responsive : {
+                        0:{
+                            items:2,
+                        },
+                        600:{
+                            items:3,
+                            nav:false
+                        },
+                        1000:{
+                            items:5,
+                            loop:false
+                        }
+                    }
+                });
+
             }, 2000)
         });
 
     </script>
 
     <script id="__bs_script__">//<![CDATA[
-    document.write("<script async src='http://192.168.0.105:3000/browser-sync/browser-sync-client.js?v=2.23.2'><\/script>".replace("HOST", location.hostname));
+    document.write("<script async src='http://192.168.0.106:3000/browser-sync/browser-sync-client.js?v=2.23.2'><\/script>".replace("HOST", location.hostname));
     //]]></script>
 
 </body>

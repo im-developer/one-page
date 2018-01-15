@@ -90,6 +90,28 @@
             return false;
         })
 
+        $('.portfolio-categories li a').click(function () {
+            $('.portfolio-categories li').removeClass('active');
+            $(this).parent().addClass('active');
+            return false;
+        })
+
+        $(".owl-carousel").owlCarousel({
+            responsive : {
+                0:{
+                    items:2,
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    loop:false
+                }
+            }
+        });
+
     });
 
 </script>

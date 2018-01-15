@@ -22,6 +22,12 @@ $animateTime: 60s;
   left: 250px;
   top: 100px;
 
+  @include breakpoint(mobileonly) {
+    left: 20%;
+    top: 10%;
+    width: 75px;
+  }
+
   -webkit-animation:spin 20s linear infinite;
   -moz-animation:spin 20s linear infinite;
   animation:spin 20s linear infinite;
@@ -38,24 +44,40 @@ $animateTime: 60s;
   top: 120px;
   left: 40%;
   animation-delay: -(($animateTime * 40 / 100) + 5);
+
+  @include breakpoint(mobileonly) {
+    width: 75px;
+  }
 }
 
 .cloud-3 {
   top: 110px;
   left: 65%;
   animation-delay: -(($animateTime * 65 / 100) + 5);
+
+  @include breakpoint(mobileonly) {
+    width: 105px;
+  }
 }
 
 .cloud-4 {
   bottom: 200px;
   left: calc(80% - 230px);
   animation-delay: -(($animateTime * 80 / 100));
+
+  @include breakpoint(mobileonly) {
+    width: 105px;
+  }
 }
 
 .cloud-5 {
   bottom: 200px;
   left: calc(30% - 150px);
   animation-delay: -(($animateTime * 30 / 100));
+
+  @include breakpoint(mobileonly) {
+    width: 105px;
+  }
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
@@ -76,9 +98,26 @@ $animateTime: 60s;
   z-index: 2;
   font-family: "Verlag Bold", Arial, sans-serif;
 
+  @include breakpoint(mobileonly) {
+    font-size: 50px;
+    margin-top: 55%;
+  }
+
   &.animate {
     animation: example 1s normal forwards ease-in-out, opacity 3s normal forwards ease;
   }
+
+  @include breakpoint(mobileonly) {
+    &.animate {
+      animation: topTopMobile 1s normal forwards ease-in-out, opacity 3s normal forwards ease;
+    }
+  }
+
+}
+
+@keyframes topTopMobile {
+  from {margin-top: 55%;}
+  to {margin-top: 60%;}
 }
 
 @keyframes example {
@@ -97,6 +136,11 @@ $animateTime: 60s;
   z-index: 2;
   opacity: 0;
   font-family: "Verlag Light", Arial, sans-serif;
+
+  @include breakpoint(mobileonly) {
+    padding: 0 30px;
+  }
+
   &.animate {
     animation: example2 1s normal forwards ease-in-out, opacity2 3s normal forwards ease;
     animation-delay: 1s;

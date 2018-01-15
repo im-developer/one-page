@@ -1,12 +1,27 @@
 .section-3 {
   height: 100vh;
 
+  .image-container {
+    min-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: auto !important;
+    }
+  }
+
   .section-title {
     text-transform: uppercase;
     text-align: center;
     font-size: 43px;
     padding-top: 120px;
     font-family: "Verlag Light", Arial, sans-serif;
+
+    @include breakpoint(mobileonly) {
+      font-size: 23px;
+      padding-top: 80px;
+    }
 
 
     &.animate {
@@ -17,6 +32,9 @@
       font-size: 45px;
       font-weight: bold;
       font-family: "Verlag Black", Arial, sans-serif;
+      @include breakpoint(mobileonly) {
+        font-size: 23px;
+      }
     }
     span.separate {
       color: #EE4036;
@@ -31,6 +49,9 @@
     font-size: 12px;
     font-family: "Verlag Light", Arial, sans-serif;
 
+    @include breakpoint(mobileonly) {
+      padding: 0 40px;
+    }
 
     &.animate {
       animation: toRight 1s normal forwards ease-in-out, opacity 3s normal forwards ease;
@@ -48,7 +69,7 @@
         margin-left: 0;
       }
       float: left;
-      width: calc(20% - 25px);
+      width: calc(100% - 25px);
       height: 240px;
       min-height: 230px;
       padding: 5px;
@@ -58,6 +79,7 @@
         font-weight: normal;
         text-transform: uppercase;
         font-family: "Verlag Light", Arial, sans-serif;
+        min-height: 70px;
         span {
           font-weight: bold;
           display: block;
@@ -70,6 +92,10 @@
         font-size: 12px;
         text-align: justify;
         font-family: "Verlag XLight", Arial, sans-serif;
+
+        @include breakpoint(mobileonly) {
+          font-size: 16px;
+        }
       }
 
       .read-more {

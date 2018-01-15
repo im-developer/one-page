@@ -1,3 +1,14 @@
+.viewing-page-2 {
+  .onepage-pagination li a:before {
+    background: rgba(255,255,255,0.85);
+  }
+  .onepage-pagination li a.active:before {
+    border: 1px solid white;
+  }
+}
+.owl-carousel .owl-stage-outer {
+  overflow: unset !important;
+}
 .section-2 {
   background-color: #231F20;
   height: 100vh;
@@ -9,12 +20,19 @@
     color: white;
     padding-top: 120px;
 
+    @include breakpoint(mobileonly) {
+      font-size: 23px;
+    }
+
     font-family: "Verlag Book", Arial, sans-serif;
     opacity: 0;
     span {
       font-size: 45px;
       font-weight: bold;
       font-family: "Verlag Bold", Arial, sans-serif;
+      @include breakpoint(mobileonly) {
+        font-size: 26px;
+      }
     }
     &.animate {
       animation: toRight 1s normal forwards ease-in-out, opacity 3s normal forwards ease;
@@ -25,7 +43,7 @@
     color: #EE4036;
     text-align: center;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 16px;
     font-family: "Verlag XLight", Arial, sans-serif;
     &.animate {
       animation: toRight 1s normal forwards ease-in-out, opacity 3s normal forwards ease;
@@ -43,7 +61,11 @@
         margin-left: 0;
       }
       float: left;
-      width: calc(20% - 25px);
+      width: calc(100% - 25px);
+      @include breakpoint(mobileonly) {
+        width: calc(100% - 25px);
+      }
+
       height: 240px;
       min-height: 230px;
       padding: 5px;
@@ -72,10 +94,18 @@
         opacity: 0;
         transition: opacity 1s;
         font-family: "Verlag Light", Arial, sans-serif;
+
+        @include breakpoint(mobileonly) {
+          font-size: 13px;
+        }
+
       }
 
       &.active {
         transform: scale(1.1);
+        @include breakpoint(mobileonly) {
+          transform: scale(1);
+        }
       }
 
       &.animate, &.animated {

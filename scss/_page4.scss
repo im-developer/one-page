@@ -1,3 +1,12 @@
+.viewing-page-4 {
+  .onepage-pagination li a:before {
+    background: rgba(255,255,255,0.85);
+  }
+  .onepage-pagination li a.active:before {
+    border: 1px solid white;
+  }
+}
+
 .section-4 {
   height: 100vh;
   background-color: #231F20;
@@ -8,6 +17,7 @@
     font-size: 43px;
     padding-top: 100px;
     color: white;
+    font-family: "Verlag Book", Arial, sans-serif;
   }
 
   .section-description {
@@ -16,6 +26,7 @@
     font-size: 18px;
     color: white;
     line-height: 1px;
+    font-family: "Verlag Book", Arial, sans-serif;
   }
 
   .portfolio-categories {
@@ -31,6 +42,7 @@
         font-size: 15px;
         text-decoration: none;
         transition: color 1s;
+        font-family: "Verlag Book", Arial, sans-serif;
 
         &:hover {
           color: white;
@@ -64,6 +76,10 @@
       padding: 0;
       width: 25%;
       height: 180px;
+      transform: scale(0);
+      &.animate {
+        animation: scale 1s normal forwards ease-in-out, opacity 3s normal forwards ease;
+      }
       img {
         width: 100%;
         height: 100%;
